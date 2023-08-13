@@ -23,12 +23,27 @@ This script automates the process of creating the directory structure for your p
 
 The script will create the following directories:
 
+### Project Structure
+
+The script will create the following directories:
+
 - `public`: Static assets served directly to the client
+  - `css`: CSS styles, often compiled from SCSS
+  - `js`: JavaScript files, compiled and minified for production
+  - `images`: Graphical assets like logos, icons, and images
+  - `downloads`: Files available for users to download (e.g., PDFs, ZIPs)
 - `src`: Raw source files before processing or compilation
+  - `scss`: SCSS files, extending CSS with additional features
+  - `js`: Modern ES6+ JavaScript source files
 - `dist`: Processed files ready for deployment
+  - `css`: CSS output after SCSS compilation
+  - `js`: JavaScript transpiled for browser compatibility
 - `views`: Server-side templates
+  - `partials`: Smaller, reusable EJS templates (e.g., headers, footers)
 - `routes`, `models`, `controllers`, `services`, `middlewares`, `helpers`, `config`: Components following the MVC architecture
 - `tests`: Unit and integration tests
+  - `unit`: Tests focused on individual functions or classes
+  - `integration`: Tests verifying the integration of multiple units or subsystems
 - `migrations`: Database schema migration scripts
 - `docs`: Comprehensive documentation
 - `assets`: Miscellaneous resources
